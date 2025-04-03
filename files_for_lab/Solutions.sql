@@ -82,7 +82,7 @@ WHERE order_id BETWEEN 29540 AND 29560;
 -- Query 11
 -- In the order table, what are the individual amounts that were sent to (account_to) id 30067122?
 SELECT
-    SUM(amount) AS total_amount
+    amount AS total_amount
 FROM `order`
 WHERE account_to = 30067122;
 
